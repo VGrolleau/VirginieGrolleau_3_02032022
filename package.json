@@ -1,0 +1,19 @@
+{
+    "name": "virginiegrolleau_3_02032022",
+    "version": "1.0.0",
+    "description": "Ohmyfood site by Virginie GROLLEAU",
+    "main": "index.js",
+    "scripts": {
+        "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VGrolleau/VirginieGrolleau_3_02032022.git"
+    },
+    "author": "Virginie GROLLEAU",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/VGrolleau/VirginieGrolleau_3_02032022/issues"
+    },
+    "homepage": "https://github.com/VGrolleau/VirginieGrolleau_3_02032022#readme"
+}
