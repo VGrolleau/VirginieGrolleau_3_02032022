@@ -1,3 +1,18 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.footer {
+  color: #fff;
+}
+.footer__ttl {
+  font-family: "Shrikhand", cursive;
+  font-size: medium;
+}
+.footer .links {
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -12,6 +27,26 @@ a {
 .header__previous {
   position: absolute;
   left: 20px;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 30px 20px;
+}
+.footer__ttl {
+  margin: 0 0 20px;
+}
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+.footer .links__link {
+  margin-bottom: 10px;
+}
+.footer i {
+  width: 16px;
+  max-width: 16px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
