@@ -1,0 +1,18 @@
+.location {
+    background-color: $colour-dark-grey;
+}
+
+.xploration {
+    background-color: $colour-light-grey;
+}
+
+.rule {
+    background-color: $colour-light-grey;
+}
+
+.restaurants {
+    background-color: $colour-light-grey;
+    & .card {
+        background-color: $colour-white;
+    }
+}

@@ -49,4 +49,23 @@ a {
   margin-right: 10px;
 }
 
+.location {
+  background-color: #EAEAEA;
+}
+
+.xploration {
+  background-color: #F6F6F6;
+}
+
+.rule {
+  background-color: #F6F6F6;
+}
+
+.restaurants {
+  background-color: #F6F6F6;
+}
+.restaurants .card {
+  background-color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */
