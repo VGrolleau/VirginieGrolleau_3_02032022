@@ -1,3 +1,17 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 20px;
+}
+.header__previous {
+  position: absolute;
+  left: 20px;
+}
 
 /*# sourceMappingURL=style.css.map */
