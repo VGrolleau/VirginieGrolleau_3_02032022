@@ -73,7 +73,38 @@
 
 .restaurants {
     background-color: $colour-light-grey;
+    padding: 50px 20px;
     .card {
         background-color: $colour-white;
+        &-img {
+            display: flex;
+            height: 180px;
+            // @include bg-img-restaurants($img-url);
+            // position: relative;
+            // &__img {
+            // width: 100%;
+            // position: absolute;
+            // }
+        }
+        &:nth-child(1) {
+            .card-img {
+                background: center / cover url($palette-img-url);
+            }
+        }
+        &:nth-child(2) {
+            .card-img {
+                background: center / cover url($note-img-url);
+            }
+        }
+        &:nth-child(3) {
+            .card-img {
+                background: center / cover url($francaise-img-url);
+            }
+        }
+        &:nth-child(4) {
+            .card-img {
+                background: center / cover url($delice-img-url);
+            }
+        }
     }
 }

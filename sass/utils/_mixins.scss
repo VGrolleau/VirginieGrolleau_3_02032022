@@ -14,3 +14,10 @@
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
     // box-shadow: 0 0 2em black;
 }
+
+// @mixin bg-img-restaurants($restaurants) {
+//     @each $restaurant,
+//     $url in $restaurants {
+//         background: center / cover url($url);
+//     }
+// }
