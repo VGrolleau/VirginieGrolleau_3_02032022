@@ -7,6 +7,17 @@
   color: #373737;
 }
 
+.xploration__ttl {
+  font-size: 1.6em;
+}
+.xploration__txt {
+  font-weight: 300;
+}
+.xploration__btn {
+  color: #fff;
+  font-weight: 600;
+}
+
 .footer {
   color: #fff;
 }
@@ -72,6 +83,28 @@ a {
 
 .xploration {
   background-color: #F6F6F6;
+  padding: 50px 30px;
+  text-align: center;
+}
+.xploration__ttl {
+  margin-top: 0;
+}
+.xploration__txt {
+  margin-bottom: 30px;
+}
+.xploration__btn {
+  background-image: linear-gradient(to top left, #9356DC 10%, #FF79DA 100%);
+  border: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+}
+.xploration__btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to top left, #9256dcd8 0.5%, #FF79DA 100%);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+  transition: all 0.3s;
 }
 
 .rule {

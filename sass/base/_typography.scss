@@ -7,6 +7,19 @@
     color: $colour-location-grey;
 }
 
+.xploration {
+    &__ttl {
+        font-size: 1.6em;
+    }
+    &__txt {
+        font-weight: 300;
+    }
+    &__btn {
+        color: $colour-white;
+        font-weight: 600;
+    }
+}
+
 .footer {
     color: $colour-white;
     &__ttl {

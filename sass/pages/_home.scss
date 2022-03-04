@@ -16,6 +16,28 @@
 
 .xploration {
     background-color: $colour-light-grey;
+    padding: 50px 30px;
+    text-align: center;
+    &__ttl {
+        margin-top: 0;
+    }
+    &__txt {
+        margin-bottom: 30px;
+    }
+    &__btn {
+        background-image: linear-gradient(to top left, #9356DC 10%, #FF79DA 100%);
+        border: none;
+        border-radius: 30px;
+        padding: 15px 20px;
+        @include shadow-box;
+        transition: all .3s;
+        &:hover {
+            cursor: pointer;
+            background-image: linear-gradient(to top left, #9256dcd8 .5%, #FF79DA 100%);
+            @include shadow-box-hover;
+            transition: all .3s;
+        }
+    }
 }
 
 .rule {
