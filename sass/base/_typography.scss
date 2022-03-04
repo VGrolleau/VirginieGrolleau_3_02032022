@@ -20,6 +20,15 @@
     }
 }
 
+.functioning {
+    .rule {
+        font-weight: 500;
+        &__prepend {
+            color: $colour-white;
+        }
+    }
+}
+
 .footer {
     color: $colour-white;
     &__ttl {

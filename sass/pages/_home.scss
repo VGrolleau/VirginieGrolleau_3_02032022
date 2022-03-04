@@ -25,7 +25,7 @@
         margin-bottom: 30px;
     }
     &__btn {
-        background-image: linear-gradient(to top left, #9356DC 10%, #FF79DA 100%);
+        background-image: linear-gradient(to top left, $colour-primary 10%, $colour-secondary 100%);
         border: none;
         border-radius: 30px;
         padding: 15px 20px;
@@ -33,20 +33,47 @@
         transition: all .3s;
         &:hover {
             cursor: pointer;
-            background-image: linear-gradient(to top left, #9256dcd8 .5%, #FF79DA 100%);
+            background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
             @include shadow-box-hover;
             transition: all .3s;
         }
     }
 }
 
-.rule {
-    background-color: $colour-light-grey;
+.functioning {
+    padding: 20px;
+    .rule {
+        background-color: $colour-light-grey;
+        display: flex;
+        align-items: center;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        padding: 10px 30px;
+        border-radius: 25px;
+        @include shadow-box;
+        &:last-child {
+            background-color: #9256dc32;
+            .rule__icon {
+                color: $colour-primary;
+            }
+        }
+        &__prepend {
+            position: absolute;
+            left: 22px;
+            background-color: $colour-primary;
+            padding: 3px 8px;
+            border-radius: 50%;
+        }
+        &__icon {
+            margin-right: 20px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
 }
 
 .restaurants {
     background-color: $colour-light-grey;
-    & .card {
+    .card {
         background-color: $colour-white;
     }
 }
