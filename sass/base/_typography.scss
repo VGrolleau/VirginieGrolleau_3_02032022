@@ -2,6 +2,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.location {
+    font-weight: 500;
+    color: $colour-location-grey;
+}
+
 .footer {
     color: $colour-white;
     &__ttl {

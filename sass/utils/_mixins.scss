@@ -2,3 +2,15 @@
     text-decoration: none;
     color: inherit;
 }
+
+@mixin shadow-box {
+    box-shadow: 5px 2px 0.5em rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 0 2em black;
+}
+
+@mixin shadow-box-hover {
+    // box-shadow: 5px 2px 0.5em rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+    // box-shadow: 0 0 2em black;
+}
