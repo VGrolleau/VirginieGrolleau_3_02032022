@@ -29,6 +29,25 @@
     }
 }
 
+.restaurants {
+    .card-footer {
+        &-name {
+            &__ttl {
+                font-size: 1.1em;
+            }
+            &__txt {
+                font-weight: 300;
+            }
+        }
+        &__icon {
+            &:hover::before {
+                color: transparent;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 .footer {
     color: $colour-white;
     &__ttl {

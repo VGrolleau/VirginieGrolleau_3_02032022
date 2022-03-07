@@ -25,6 +25,17 @@
   color: #fff;
 }
 
+.restaurants .card-footer-name__ttl {
+  font-size: 1.1em;
+}
+.restaurants .card-footer-name__txt {
+  font-weight: 300;
+}
+.restaurants .card-footer__icon:hover::before {
+  color: transparent;
+  font-weight: bold;
+}
+
 .footer {
   color: #fff;
 }
@@ -177,9 +188,23 @@ a {
 }
 .restaurants .card-footer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 20px 20px 15px;
 }
 .restaurants .card-footer-name__ttl {
-  margin-bottom: 0;
+  margin: 0 0 5px;
+}
+.restaurants .card-footer-name__txt {
+  margin: 0;
+}
+.restaurants .card-footer__icon::before {
+  transition: color 0.5s ease-out;
+}
+.restaurants .card-footer__icon:hover::before {
+  background-clip: text;
+  background-image: linear-gradient(to top left, #9256dcd8 0.5%, #FF79DA 100%);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

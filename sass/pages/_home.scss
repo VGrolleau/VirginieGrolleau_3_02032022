@@ -115,9 +115,25 @@
         }
         &-footer {
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 20px 20px 15px;
             &-name {
                 &__ttl {
-                    margin-bottom: 0;
+                    margin: 0 0 5px;
+                }
+                &__txt {
+                    margin: 0;
+                }
+            }
+            &__icon {
+                &::before {
+                    transition: color .5s ease-out;
+                }
+                &:hover::before {
+                    background-clip: text;
+                    background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
+                    cursor: pointer;
                 }
             }
         }
