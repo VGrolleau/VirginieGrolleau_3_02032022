@@ -52,6 +52,23 @@ a {
   color: inherit;
 }
 
+.new {
+  background-color: #99E2D0;
+  color: #278870;
+  display: block;
+  width: max-content;
+  position: absolute;
+  right: 35px;
+  margin-top: 15px;
+  padding: 8px 10px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+.new::after {
+  content: "Nouveau";
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -191,6 +208,9 @@ a {
   align-items: center;
   justify-content: space-between;
   padding: 20px 20px 20px 15px;
+}
+.restaurants .card-footer-name {
+  width: 90%;
 }
 .restaurants .card-footer-name__ttl {
   margin: 0 0 5px;
