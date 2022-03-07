@@ -151,10 +151,17 @@ a {
 }
 .restaurants .card {
   background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+}
+.restaurants .card:hover {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
 }
 .restaurants .card-img {
   display: flex;
   height: 180px;
+  border-radius: 15px 15px 0 0;
 }
 .restaurants .card:nth-child(1) .card-img {
   background: center/cover url("../../public/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -167,6 +174,12 @@ a {
 }
 .restaurants .card:nth-child(4) .card-img {
   background: center/cover url("../../public/img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+.restaurants .card-footer {
+  display: flex;
+}
+.restaurants .card-footer-name__ttl {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

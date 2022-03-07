@@ -76,9 +76,16 @@
     padding: 50px 20px;
     .card {
         background-color: $colour-white;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        @include shadow-box;
+        &:hover {
+            @include shadow-box-hover;
+        }
         &-img {
             display: flex;
             height: 180px;
+            border-radius: 15px 15px 0 0;
             // @include bg-img-restaurants($img-url);
             // position: relative;
             // &__img {
@@ -104,6 +111,14 @@
         &:nth-child(4) {
             .card-img {
                 background: center / cover url($delice-img-url);
+            }
+        }
+        &-footer {
+            display: flex;
+            &-name {
+                &__ttl {
+                    margin-bottom: 0;
+                }
             }
         }
     }
