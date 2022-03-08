@@ -9,3 +9,12 @@
         transform: scale(.9);
     }
 }
+
+@keyframes translate-top {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

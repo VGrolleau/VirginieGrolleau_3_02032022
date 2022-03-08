@@ -386,5 +386,18 @@ a {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.3s ease-out;
 }
+.meals .dishes-list .dish-name {
+  width: 80%;
+}
+.meals .dishes-list .dish-name__ttl {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.meals .dishes-list .dish-name__txt {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
 /*# sourceMappingURL=style.css.map */

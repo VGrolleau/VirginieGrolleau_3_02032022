@@ -1,6 +1,9 @@
 .footer {
     background-color: $colour-back-footer;
     padding: 30px 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
     &__ttl {
         margin: 0 0 20px;
     }
