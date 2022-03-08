@@ -1,3 +1,14 @@
+@keyframes beat {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
 }
@@ -67,6 +78,7 @@ a {
   border-radius: 2px;
   font-weight: 600;
   font-size: 0.8em;
+  animation: beat 2.5s infinite;
 }
 .new::after {
   content: "Nouveau";
