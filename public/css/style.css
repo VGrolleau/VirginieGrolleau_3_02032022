@@ -46,6 +46,9 @@
 .footer .links {
   font-weight: 500;
 }
+.footer .links__link:hover {
+  font-style: italic;
+}
 
 a {
   text-decoration: none;

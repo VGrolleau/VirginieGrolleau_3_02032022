@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 .location {
@@ -51,10 +51,13 @@
 .footer {
     color: $colour-white;
     &__ttl {
-        font-family: 'Shrikhand', cursive;
+        font-family: "Shrikhand", cursive;
         font-size: medium;
     }
-    & .links {
+    .links {
         font-weight: 500;
+        &__link:hover {
+            font-style: italic;
+        }
     }
 }
