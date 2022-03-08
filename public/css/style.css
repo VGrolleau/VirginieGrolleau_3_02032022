@@ -31,7 +31,7 @@
 .restaurants .card-footer-name__txt {
   font-weight: 300;
 }
-.restaurants .card-footer__icon:hover::before {
+.restaurants .card-footer-label .card-footer__icon--checked::before {
   color: transparent;
   font-weight: bold;
 }
@@ -135,12 +135,14 @@ a {
   border-radius: 30px;
   padding: 15px 20px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-out;
   transition: all 0.3s;
 }
 .xploration__btn:hover {
   cursor: pointer;
   background-image: linear-gradient(to top left, #9256dcd8 0.5%, #FF79DA 100%);
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease-out;
   transition: all 0.3s;
 }
 
@@ -156,11 +158,16 @@ a {
   padding: 10px 30px;
   border-radius: 25px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
-.functioning .rule:last-child {
+.functioning .rule:hover {
   background-color: #9256dc32;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
-.functioning .rule:last-child .rule__icon {
+.functioning .rule:hover .rule__icon {
   color: #9356DC;
 }
 .functioning .rule__prepend {
@@ -184,9 +191,11 @@ a {
   border-radius: 15px;
   margin-bottom: 20px;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-out;
 }
 .restaurants .card:hover {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease-out;
 }
 .restaurants .card-img {
   display: flex;
@@ -220,13 +229,31 @@ a {
 .restaurants .card-footer-name__txt {
   margin: 0;
 }
-.restaurants .card-footer__icon::before {
-  transition: color 0.5s ease-out;
+.restaurants .card-footer__input {
+  display: none;
 }
-.restaurants .card-footer__icon:hover::before {
+.restaurants .card-footer__input:checked ~ .card-footer-label .card-footer__icon {
+  display: none;
+}
+.restaurants .card-footer__input:checked ~ .card-footer-label .card-footer__icon--checked {
+  display: block;
+  transform: scaleY(1);
+  transition: transform 0.5s ease-out;
+}
+.restaurants .card-footer__input:checked ~ .card-footer-label .card-footer__icon--checked::before {
   background-clip: text;
   background-image: linear-gradient(to top left, #9256dcd8 0.5%, #FF79DA 100%);
+}
+.restaurants .card-footer-label {
   cursor: pointer;
+}
+.restaurants .card-footer-label .card-footer__icon {
+  display: block;
+}
+.restaurants .card-footer-label .card-footer__icon--checked {
+  display: none;
+  transform: scaleY(0);
+  transition: transform 0.5s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */

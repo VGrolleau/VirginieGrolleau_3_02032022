@@ -39,10 +39,12 @@
                 font-weight: 300;
             }
         }
-        &__icon {
-            &:hover::before {
-                color: transparent;
-                font-weight: bold;
+        &-label {
+            .card-footer__icon--checked {
+                &::before {
+                    color: transparent;
+                    font-weight: bold;
+                }
             }
         }
     }
