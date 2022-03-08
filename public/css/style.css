@@ -233,10 +233,10 @@ a {
   display: none;
 }
 .restaurants .card-footer__input:checked ~ .card-footer-label .card-footer__icon {
-  display: none;
+  transform: scaleY(0);
+  transition: transform 0.5s ease-out;
 }
 .restaurants .card-footer__input:checked ~ .card-footer-label .card-footer__icon--checked {
-  display: block;
   transform: scaleY(1);
   transition: transform 0.5s ease-out;
 }
@@ -248,12 +248,20 @@ a {
   cursor: pointer;
 }
 .restaurants .card-footer-label .card-footer__icon {
-  display: block;
+  position: absolute;
+  right: 40px;
+  transform: scaleY(1);
+  transition: transform 0.5s ease-out;
 }
 .restaurants .card-footer-label .card-footer__icon--checked {
-  display: none;
+  position: absolute;
+  right: 40px;
   transform: scaleY(0);
   transition: transform 0.5s ease-out;
+}
+.restaurants .card-footer-label .card-footer__icon--checked::before {
+  background-clip: text;
+  background-image: linear-gradient(to top left, #9256dcd8 0.5%, #FF79DA 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
