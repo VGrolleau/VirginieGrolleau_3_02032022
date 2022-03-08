@@ -50,6 +50,21 @@
     }
 }
 
+.meals {
+    &-header {
+        .menu {
+            &-label {
+                .menu__icon--checked {
+                    &::before {
+                        color: transparent;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
 .footer {
     color: $colour-white;
     &__ttl {
