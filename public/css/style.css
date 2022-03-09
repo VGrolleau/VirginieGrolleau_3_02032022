@@ -75,6 +75,9 @@
 .dishes-list .dish-price__txt {
   font-weight: bold;
 }
+.dishes-list .dish-tick {
+  color: #fff;
+}
 
 .footer {
   color: #fff;
@@ -344,10 +347,12 @@ a {
 .meals-header .menu__input:checked ~ .menu-label .menu__icon {
   transform: scaleY(0);
   transition: transform 0.5s ease-out;
+  transform-origin: bottom center;
 }
 .meals-header .menu__input:checked ~ .menu-label .menu__icon--checked {
   transform: scaleY(1);
   transition: transform 0.5s ease-out;
+  transform-origin: bottom center;
 }
 .meals-header .menu__input:checked ~ .menu-label .menu__icon--checked::before {
   background-clip: text;
@@ -360,12 +365,14 @@ a {
   position: absolute;
   right: 30px;
   transform: scaleY(1);
+  transform-origin: bottom center;
   transition: transform 0.5s ease-out;
 }
 .meals-header .menu-label .menu__icon--checked {
   position: absolute;
   right: 30px;
   transform: scaleY(0);
+  transform-origin: bottom center;
   transition: transform 0.5s ease-out;
 }
 .meals-header .menu-label .menu__icon--checked::before {
@@ -410,19 +417,33 @@ a {
   white-space: nowrap;
   margin: 0;
 }
-.meals .dishes-list .dish-price {
-  margin: 12px 10px 12px 0;
+.meals .dishes-list .dish-price-tick {
+  display: flex;
   width: 20%;
+}
+.meals .dishes-list .dish-price-tick .dish-price {
+  margin: 12px 10px 12px 0;
   height: 40px;
   display: flex;
   align-items: end;
   justify-content: center;
+  transform: translateX(50%);
+  transition: transform 0.5s ease-out;
 }
-.meals .dishes-list .dish-price__txt {
+.meals .dishes-list .dish-price-tick .dish-price__txt {
   margin: 0;
 }
-.meals .dishes-list .dish-tick {
-  display: none;
+.meals .dishes-list .dish-price-tick .dish-tick {
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  cursor: pointer;
+  background-color: #99E2D0;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-out;
+  transform-origin: top right;
 }
 .meals .dishes-list .dish:hover {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
@@ -431,17 +452,18 @@ a {
 .meals .dishes-list .dish:hover .dish-name {
   width: 60%;
 }
-.meals .dishes-list .dish:hover .dish-price {
-  margin-right: 0;
+.meals .dishes-list .dish:hover .dish-price-tick {
+  width: 40%;
 }
-.meals .dishes-list .dish:hover .dish-tick {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
-  cursor: pointer;
-  background-color: #99E2D0;
+.meals .dishes-list .dish:hover .dish-price-tick .dish-price {
+  margin-right: 0;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.5s ease-out;
+}
+.meals .dishes-list .dish:hover .dish-price-tick .dish-tick {
+  transform: scaleX(1);
+  transition: transform 0.5s ease-out;
 }
 
 /*# sourceMappingURL=style.css.map */
