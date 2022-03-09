@@ -14,9 +14,7 @@
     top: 220px;
     margin-bottom: 220px;
     &-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-between-center;
         &__ttl {
             font-family: "Shrikhand", cursive;
             font-size: 1.8em;
@@ -64,9 +62,6 @@
     .dishes-list {
         margin-top: 30px;
         &__ttl {
-            font-weight: 400;
-            font-size: 1em;
-            text-transform: uppercase;
             margin: 0;
         }
         &__line {
@@ -76,29 +71,60 @@
             margin-top: 5px;
         }
         .dish {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            border-radius: 20px;
+            margin: 15px 0 10px;
+            border-radius: 15px;
             background-color: $colour-white;
-            @include shadow-box;
             animation: translate-top 1s ease-out;
-            &:hover {
-                @include shadow-box-hover;
-            }
+            @include shadow-box;
+            display: flex;
+            align-items: center;
+            // @include flex-between-center;
             &-name {
                 width: 80%;
+                margin: 12px 0 12px 10px;
                 &__ttl {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
+                    @include elipsis;
+                    margin: 0 0 5px 0;
                 }
                 &__txt {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
+                    @include elipsis;
+                    margin: 0;
                 }
+            }
+            &-price {
+                margin: 12px 10px 12px 0;
+                width: 20%;
+                // align-self: end;
+                height: 40px;
+                display: flex;
+                align-items: end;
+                justify-content: center;
+                &__txt {
+                    margin: 0;
+                }
+            }
+            &-tick {
+                display: none;
+            }
+            &:hover {
+                .dish {
+                    &-name {
+                        width: 60%;
+                    }
+                    &-price {
+                        margin-right: 0;
+                    }
+                    &-tick {
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 20%;
+                        cursor: pointer;
+                        background-color: $colour-tertiary;
+                    }
+                }
+                @include shadow-box-hover;
             }
         }
     }

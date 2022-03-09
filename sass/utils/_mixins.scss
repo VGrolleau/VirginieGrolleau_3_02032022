@@ -33,3 +33,21 @@
     font-size: .8em;
     animation: beat 2.5s infinite;
 }
+
+@mixin elipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@mixin flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

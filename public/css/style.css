@@ -37,26 +37,42 @@
   font-weight: 600;
 }
 
-.functioning .rule {
+.rule {
   font-weight: 500;
 }
-.functioning .rule__prepend {
+.rule__prepend {
   color: #fff;
 }
 
-.restaurants .card-footer-name__ttl {
+.card-footer-name__ttl {
   font-size: 1.1em;
 }
-.restaurants .card-footer-name__txt {
+.card-footer-name__txt {
   font-weight: 300;
 }
-.restaurants .card-footer-label .card-footer__icon--checked::before {
+.card-footer-label .card-footer__icon--checked::before {
   color: transparent;
   font-weight: bold;
 }
 
-.meals-header .menu-label .menu__icon--checked::before {
+.menu__icon--checked::before {
   color: transparent;
+  font-weight: bold;
+}
+
+.dishes-list__ttl {
+  font-weight: 300;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+.dishes-list .dish-name__ttl {
+  font-size: 1em;
+}
+.dishes-list .dish-name__txt {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.dishes-list .dish-price__txt {
   font-weight: bold;
 }
 
@@ -139,8 +155,8 @@ a {
   background-color: #EAEAEA;
   box-shadow: inset 0 0.2em rgba(0, 0, 0, 0.1);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 .location__icon {
   position: absolute;
@@ -248,8 +264,8 @@ a {
 }
 .restaurants .card-footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 20px 20px 20px 15px;
 }
 .restaurants .card-footer-name {
@@ -360,9 +376,6 @@ a {
   margin-top: 30px;
 }
 .meals .dishes-list__ttl {
-  font-weight: 400;
-  font-size: 1em;
-  text-transform: uppercase;
   margin: 0;
 }
 .meals .dishes-list__line {
@@ -372,32 +385,63 @@ a {
   margin-top: 5px;
 }
 .meals .dishes-list .dish {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-radius: 20px;
+  margin: 15px 0 10px;
+  border-radius: 15px;
   background-color: #fff;
+  animation: translate-top 1s ease-out;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-out;
-  animation: translate-top 1s ease-out;
-}
-.meals .dishes-list .dish:hover {
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
-  transition: box-shadow 0.3s ease-out;
+  display: flex;
+  align-items: center;
 }
 .meals .dishes-list .dish-name {
   width: 80%;
+  margin: 12px 0 12px 10px;
 }
 .meals .dishes-list .dish-name__ttl {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin: 0 0 5px 0;
 }
 .meals .dishes-list .dish-name__txt {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  margin: 0;
+}
+.meals .dishes-list .dish-price {
+  margin: 12px 10px 12px 0;
+  width: 20%;
+  height: 40px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+}
+.meals .dishes-list .dish-price__txt {
+  margin: 0;
+}
+.meals .dishes-list .dish-tick {
+  display: none;
+}
+.meals .dishes-list .dish:hover {
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease-out;
+}
+.meals .dishes-list .dish:hover .dish-name {
+  width: 60%;
+}
+.meals .dishes-list .dish:hover .dish-price {
+  margin-right: 0;
+}
+.meals .dishes-list .dish:hover .dish-tick {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  cursor: pointer;
+  background-color: #99E2D0;
 }
 
 /*# sourceMappingURL=style.css.map */

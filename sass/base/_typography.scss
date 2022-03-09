@@ -20,51 +20,67 @@
     }
 }
 
-.functioning {
-    .rule {
-        font-weight: 500;
-        &__prepend {
-            color: $colour-white;
+// .functioning {
+.rule {
+    font-weight: 500;
+    &__prepend {
+        color: $colour-white;
+    }
+}
+
+// }
+// .restaurants {
+.card-footer {
+    &-name {
+        &__ttl {
+            font-size: 1.1em;
+        }
+        &__txt {
+            font-weight: 300;
+        }
+    }
+    &-label {
+        .card-footer__icon--checked {
+            &::before {
+                color: transparent;
+                font-weight: bold;
+            }
         }
     }
 }
 
-.restaurants {
-    .card-footer {
+// }
+// .meals {
+.menu__icon--checked {
+    &::before {
+        color: transparent;
+        font-weight: bold;
+    }
+}
+
+.dishes-list {
+    &__ttl {
+        font-weight: 300;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    .dish {
         &-name {
             &__ttl {
-                font-size: 1.1em;
+                font-size: 1em;
             }
             &__txt {
+                font-size: .9em;
                 font-weight: 300;
             }
         }
-        &-label {
-            .card-footer__icon--checked {
-                &::before {
-                    color: transparent;
-                    font-weight: bold;
-                }
-            }
+        &-price__txt {
+            font-weight: bold;
         }
     }
 }
 
-.meals {
-    &-header {
-        .menu {
-            &-label {
-                .menu__icon--checked {
-                    &::before {
-                        color: transparent;
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
-    }
-}
-
+// }
 .footer {
     color: $colour-white;
     &__ttl {
