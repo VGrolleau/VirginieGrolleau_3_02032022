@@ -13,6 +13,8 @@
     position: relative;
     top: 220px;
     margin-bottom: 220px;
+    display: flex;
+    flex-direction: column;
     &-header {
         @include flex-between-center;
         &__ttl {
@@ -66,8 +68,6 @@
     .dishes-list {
         margin-top: 30px;
         // text-align: center;
-        display: flex;
-        flex-direction: column;
         &__ttl {
             margin: 0;
         }
@@ -157,10 +157,10 @@
                 @include shadow-box-hover;
             }
         }
-        .btn {
-            align-self: center;
-            margin: 40px auto;
-            padding: 15px 45px;
-        }
+    }
+    .btn {
+        align-self: center;
+        margin: 40px auto;
+        padding: 15px 45px;
     }
 }

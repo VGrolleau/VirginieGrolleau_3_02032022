@@ -332,6 +332,8 @@ a {
   position: relative;
   top: 220px;
   margin-bottom: 220px;
+  display: flex;
+  flex-direction: column;
 }
 .meals-header {
   display: flex;
@@ -383,8 +385,6 @@ a {
 }
 .meals .dishes-list {
   margin-top: 30px;
-  display: flex;
-  flex-direction: column;
 }
 .meals .dishes-list__ttl {
   margin: 0;
@@ -477,7 +477,7 @@ a {
   transform: rotateZ(0);
   transition: transform 0.5s ease-out;
 }
-.meals .dishes-list .btn {
+.meals .btn {
   align-self: center;
   margin: 40px auto;
   padding: 15px 45px;
