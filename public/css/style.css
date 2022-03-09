@@ -421,6 +421,29 @@ a {
   white-space: nowrap;
   margin: 0;
 }
+.meals .dishes-list .dish__input {
+  display: none;
+}
+.meals .dishes-list .dish__input:checked ~ .dish-name {
+  width: 60%;
+}
+.meals .dishes-list .dish__input:checked ~ .dish-price-tick {
+  width: 40%;
+}
+.meals .dishes-list .dish__input:checked ~ .dish-price-tick .dish-price {
+  margin-right: 0;
+  width: 50%;
+  transform: translateX(0);
+  transition: transform 0.5s ease-out;
+}
+.meals .dishes-list .dish__input:checked ~ .dish-price-tick .dish-tick {
+  transform: scaleX(1);
+  transition: transform 0.5s ease-out;
+}
+.meals .dishes-list .dish__input:checked ~ .dish-price-tick .dish-tick__icon {
+  transform: rotateZ(0);
+  transition: transform 0.5s ease-out;
+}
 .meals .dishes-list .dish-price-tick {
   display: flex;
   width: 20%;
@@ -456,26 +479,6 @@ a {
 .meals .dishes-list .dish:hover {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.3s ease-out;
-}
-.meals .dishes-list .dish:hover .dish-name {
-  width: 60%;
-}
-.meals .dishes-list .dish:hover .dish-price-tick {
-  width: 40%;
-}
-.meals .dishes-list .dish:hover .dish-price-tick .dish-price {
-  margin-right: 0;
-  width: 50%;
-  transform: translateX(0);
-  transition: transform 0.5s ease-out;
-}
-.meals .dishes-list .dish:hover .dish-price-tick .dish-tick {
-  transform: scaleX(1);
-  transition: transform 0.5s ease-out;
-}
-.meals .dishes-list .dish:hover .dish-price-tick .dish-tick__icon {
-  transform: rotateZ(0);
-  transition: transform 0.5s ease-out;
 }
 .meals .btn {
   align-self: center;
