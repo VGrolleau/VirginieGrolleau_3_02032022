@@ -21,19 +21,19 @@
     &__txt {
         margin-bottom: 30px;
     }
-    &__btn {
-        background-image: linear-gradient(to top left, $colour-primary 10%, $colour-secondary 100%);
-        border: none;
-        border-radius: 30px;
+    .btn {
+        // background-image: linear-gradient(to top left, $colour-primary 10%, $colour-secondary 100%);
+        // border: none;
+        // border-radius: 30px;
         padding: 15px 20px;
-        @include shadow-box;
-        transition: all .3s;
-        &:hover {
-            cursor: pointer;
-            background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
-            @include shadow-box-hover;
-            transition: all .3s;
-        }
+        // @include shadow-box;
+        // transition: all .3s;
+        // &:hover {
+        //     cursor: pointer;
+        //     background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
+        //     @include shadow-box-hover;
+        //     transition: all .3s;
+        // }
     }
 }
 

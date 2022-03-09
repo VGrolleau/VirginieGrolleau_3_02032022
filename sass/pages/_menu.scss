@@ -65,6 +65,9 @@
     }
     .dishes-list {
         margin-top: 30px;
+        // text-align: center;
+        display: flex;
+        flex-direction: column;
         &__ttl {
             margin: 0;
         }
@@ -119,6 +122,10 @@
                         transform: scaleX(0);
                         transition: transform .5s ease-out;
                         transform-origin: top right;
+                        &__icon {
+                            transform: rotateZ(-360deg);
+                            transition: transform .5s ease-out;
+                        }
                     }
                 }
             }
@@ -139,12 +146,21 @@
                             &-tick {
                                 transform: scaleX(1);
                                 transition: transform .5s ease-out;
+                                &__icon {
+                                    transform: rotateZ(0);
+                                    transition: transform .5s ease-out;
+                                }
                             }
                         }
                     }
                 }
                 @include shadow-box-hover;
             }
+        }
+        .btn {
+            align-self: center;
+            margin: 40px auto;
+            padding: 15px 45px;
         }
     }
 }

@@ -32,10 +32,6 @@
 .xploration__txt {
   font-weight: 300;
 }
-.xploration__btn {
-  color: #fff;
-  font-weight: 600;
-}
 
 .rule {
   font-weight: 500;
@@ -91,6 +87,25 @@
 }
 .footer .links__link:hover {
   font-style: italic;
+}
+
+.btn {
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  background-image: linear-gradient(to top left, #9356DC 10%, #FF79DA 100%);
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease-out;
+  transition: all 0.3s;
+}
+.btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to top left, #9256dcd8 0.5%, #FF79DA 100%);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
+  transition: box-shadow 0.3s ease-out;
+  transition: all 0.3s;
 }
 
 a {
@@ -180,21 +195,8 @@ a {
 .xploration__txt {
   margin-bottom: 30px;
 }
-.xploration__btn {
-  background-image: linear-gradient(to top left, #9356DC 10%, #FF79DA 100%);
-  border: none;
-  border-radius: 30px;
+.xploration .btn {
   padding: 15px 20px;
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease-out;
-  transition: all 0.3s;
-}
-.xploration__btn:hover {
-  cursor: pointer;
-  background-image: linear-gradient(to top left, #9256dcd8 0.5%, #FF79DA 100%);
-  box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
-  transition: box-shadow 0.3s ease-out;
-  transition: all 0.3s;
 }
 
 .functioning {
@@ -381,6 +383,8 @@ a {
 }
 .meals .dishes-list {
   margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .meals .dishes-list__ttl {
   margin: 0;
@@ -445,6 +449,10 @@ a {
   transition: transform 0.5s ease-out;
   transform-origin: top right;
 }
+.meals .dishes-list .dish-price-tick .dish-tick__icon {
+  transform: rotateZ(-360deg);
+  transition: transform 0.5s ease-out;
+}
 .meals .dishes-list .dish:hover {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.3s ease-out;
@@ -464,6 +472,15 @@ a {
 .meals .dishes-list .dish:hover .dish-price-tick .dish-tick {
   transform: scaleX(1);
   transition: transform 0.5s ease-out;
+}
+.meals .dishes-list .dish:hover .dish-price-tick .dish-tick__icon {
+  transform: rotateZ(0);
+  transition: transform 0.5s ease-out;
+}
+.meals .dishes-list .btn {
+  align-self: center;
+  margin: 40px auto;
+  padding: 15px 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
