@@ -14,15 +14,14 @@
     &__txt {
         font-weight: 300;
     }
-    // .btn {
-    //     color: $colour-white;
-    //     font-weight: 600;
-    // }
 }
 
 // .functioning {
 .rule {
     font-weight: 500;
+    @include tablet-version {
+        font-size: 1.1em;
+    }
     &__prepend {
         color: $colour-white;
     }

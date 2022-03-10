@@ -28,6 +28,14 @@
 
 .functioning {
     padding: 20px;
+    @include tablet-version {
+        padding: 30px 50px;
+    }
+    &__ttl {
+        @include tablet-version {
+            margin-bottom: 30px;
+        }
+    }
     .rules {
         counter-reset: counterRule;
         .rule {
@@ -58,10 +66,16 @@
                 &::after {
                     content: counter(counterRule);
                 }
+                @include tablet-version {
+                    left: 110px;
+                }
             }
             &__icon {
                 margin-right: 20px;
                 color: rgba(0, 0, 0, 0.5);
+            }
+            @include tablet-version {
+                margin: 0 60px 30px 75px;
             }
         }
     }
@@ -70,11 +84,17 @@
 .restaurants {
     background-color: $colour-light-grey;
     padding: 50px 20px;
+    @include tablet-version {
+        padding: 50px;
+    }
     .card {
         background-color: $colour-white;
         border-radius: 15px;
         margin-bottom: 20px;
         @include shadow-box;
+        @include tablet-version {
+            margin: 50px;
+        }
         &:hover {
             @include shadow-box-hover;
         }
@@ -145,12 +165,18 @@
                     right: 40px;
                     transform: scaleY(1);
                     transition: transform .5s ease-out;
+                    @include tablet-version {
+                        right: 130px;
+                    }
                 }
                 .card-footer__icon--checked {
                     position: absolute;
                     right: 40px;
                     transform: scaleY(0);
                     transition: transform .5s ease-out;
+                    @include tablet-version {
+                        right: 130px;
+                    }
                     &::before {
                         background-clip: text;
                         background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);

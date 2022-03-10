@@ -50,6 +50,9 @@
     font-weight: 600;
     font-size: .8em;
     animation: beat 2.5s infinite;
+    @include tablet-version {
+        right: 135px;
+    }
 }
 
 @mixin elipsis {
@@ -110,5 +113,11 @@
                 animation-delay: 0.2s;
             }
         }
+    }
+}
+
+@mixin tablet-version {
+    @media only screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)) {
+        @content;
     }
 }
