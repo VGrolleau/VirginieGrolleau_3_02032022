@@ -266,7 +266,7 @@ a {
 }
 .location__icon {
   position: absolute;
-  left: 25%;
+  left: calc(50% - 80px);
 }
 .location__txt {
   position: relative;
@@ -290,7 +290,10 @@ a {
 .functioning {
   padding: 20px;
 }
-.functioning .rule {
+.functioning .rules {
+  counter-reset: counterRule;
+}
+.functioning .rules .rule {
   background-color: #F6F6F6;
   display: flex;
   align-items: center;
@@ -302,23 +305,27 @@ a {
   transition: box-shadow 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.functioning .rule:hover {
+.functioning .rules .rule:hover {
   background-color: #9256dc32;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.7);
   transition: box-shadow 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.functioning .rule:hover .rule__icon {
+.functioning .rules .rule:hover .rule__icon {
   color: #9356DC;
 }
-.functioning .rule__prepend {
+.functioning .rules .rule__prepend {
+  counter-increment: counterRule;
   position: absolute;
   left: 22px;
   background-color: #9356DC;
   padding: 3px 8px;
   border-radius: 50%;
 }
-.functioning .rule__icon {
+.functioning .rules .rule__prepend::after {
+  content: counter(counterRule);
+}
+.functioning .rules .rule__icon {
   margin-right: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
