@@ -2,6 +2,12 @@
     font-family: "Roboto", sans-serif;
 }
 
+.header__previous {
+    @include tablet-version {
+        font-size: 1.2em;
+    }
+}
+
 .location {
     font-weight: 500;
     color: $colour-location-grey;

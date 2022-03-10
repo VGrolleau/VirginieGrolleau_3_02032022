@@ -1,246 +1,265 @@
-    .main__img {
-        width: 100%;
-        height: 250px;
-        object-fit: cover;
-        position: fixed;
-        top: 64px;
+.main__img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: fixed;
+    top: 64px;
+    @include tablet-version {
+        height: 300px;
     }
-    
-    .meals {
-        border-radius: 30px 30px 0 0;
-        background-color: $colour-light-grey;
-        padding: 30px 15px;
-        position: relative;
-        top: 220px;
-        margin-bottom: 220px;
-        display: flex;
-        flex-direction: column;
-        &-header {
-            @include flex-between-center;
-            &__ttl {
-                font-family: "Shrikhand", cursive;
-                font-size: 1.8em;
-                margin: 0;
-            }
-            .menu {
-                &__input {
-                    display: none;
-                    &:checked~.menu-label {
-                        .menu__icon {
-                            transform: scaleY(0);
-                            transition: transform .5s ease-out;
-                            transform-origin: bottom center;
-                        }
-                        .menu__icon--checked {
-                            transform: scaleY(1);
-                            transition: transform .5s ease-out;
-                            transform-origin: bottom center;
-                            &::before {
-                                background-clip: text;
-                                background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
-                            }
-                        }
-                    }
-                }
-                &-label {
-                    cursor: pointer;
+}
+
+.meals {
+    border-radius: 30px 30px 0 0;
+    background-color: $colour-light-grey;
+    padding: 30px 15px;
+    position: relative;
+    top: 220px;
+    margin-bottom: 220px;
+    display: flex;
+    flex-direction: column;
+    @include tablet-version {
+        top: 335px;
+        margin-bottom: 335px;
+        padding: 50px;
+    }
+    &-header {
+        @include flex-between-center;
+        &__ttl {
+            font-family: "Shrikhand", cursive;
+            font-size: 1.8em;
+            margin: 0;
+        }
+        .menu {
+            &__input {
+                display: none;
+                &:checked~.menu-label {
                     .menu__icon {
-                        position: absolute;
-                        right: 30px;
-                        transform: scaleY(1);
+                        transform: scaleY(0);
+                        transition: transform 0.5s ease-out;
                         transform-origin: bottom center;
-                        transition: transform .5s ease-out;
                     }
                     .menu__icon--checked {
-                        position: absolute;
-                        right: 30px;
-                        transform: scaleY(0);
+                        transform: scaleY(1);
+                        transition: transform 0.5s ease-out;
                         transform-origin: bottom center;
-                        transition: transform .5s ease-out;
                         &::before {
                             background-clip: text;
-                            background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
+                            background-image: linear-gradient( to top left, #9256dcd8 0.5%, $colour-secondary 100%);
                         }
                     }
                 }
             }
-        }
-        .dishes-list {
-            margin-top: 30px;
-            // text-align: center;
-            &__ttl {
-                margin: 0;
-            }
-            &__line {
-                width: 40px;
-                height: 3px;
-                background-color: $colour-tertiary;
-                margin-top: 5px;
-            }
-            .first {
-                animation: translate-top 1s ease-out;
-                animation-delay: 0;
-                animation-fill-mode: forwards;
-            }
-            .second {
-                animation: translate-top 1s ease-out;
-                animation-delay: .2s;
-                animation-fill-mode: forwards;
-            }
-            .third {
-                animation: translate-top 1s ease-out;
-                animation-delay: .4s;
-                animation-fill-mode: forwards;
-            }
-            .fourth {
-                animation: translate-top 1s ease-out;
-                animation-delay: .6s;
-                animation-fill-mode: forwards;
-            }
-            .fifth {
-                animation: translate-top 1s ease-out;
-                animation-delay: .8s;
-                animation-fill-mode: forwards;
-            }
-            .sixth {
-                animation: translate-top 1s ease-out;
-                animation-delay: 1s;
-                animation-fill-mode: forwards;
-            }
-            .seventh {
-                animation: translate-top 1s ease-out;
-                animation-delay: 1.2s;
-                animation-fill-mode: forwards;
-            }
-            .eighth {
-                animation: translate-top 1s ease-out;
-                animation-delay: 1.4s;
-                animation-fill-mode: forwards;
-            }
-            .ninth {
-                animation: translate-top 1s ease-out;
-                animation-delay: 1.6s;
-                animation-fill-mode: forwards;
-            }
-            .tenth {
-                animation: translate-top 1s ease-out;
-                animation-delay: 1.8s;
-                animation-fill-mode: forwards;
-            }
-            .dish {
-                opacity: 0;
-                margin: 15px 0 10px;
-                border-radius: 15px;
-                background-color: $colour-white;
-                @include shadow-box;
-                display: flex;
-                align-items: center;
-                &-name {
-                    width: 80%;
-                    margin: 12px 0 12px 10px;
-                    &__ttl {
-                        @include elipsis;
-                        margin: 0 0 5px 0;
-                    }
-                    &__txt {
-                        @include elipsis;
-                        margin: 0;
+            &-label {
+                cursor: pointer;
+                .menu__icon {
+                    position: absolute;
+                    right: 30px;
+                    transform: scaleY(1);
+                    transform-origin: bottom center;
+                    transition: transform 0.5s ease-out;
+                    @include tablet-version {
+                        right: 60px;
                     }
                 }
-                &__input {
-                    display: none;
-                    &:checked~.dish-name {
-                        width: 60%;
+                .menu__icon--checked {
+                    position: absolute;
+                    right: 30px;
+                    transform: scaleY(0);
+                    transform-origin: bottom center;
+                    transition: transform 0.5s ease-out;
+                    @include tablet-version {
+                        right: 60px;
                     }
-                    &:checked~.dish-price-tick {
-                        // .dish {
-                        //     &-label {
-                        width: 40%;
-                        .dish {
-                            &-price {
-                                margin-right: 0;
-                                width: 50%;
-                                transform: translateX(0);
-                                transition: transform .5s ease-out;
-                            }
-                            &-tick {
-                                transform: scaleX(1);
-                                transition: transform .5s ease-out;
-                                &__icon {
-                                    transform: rotateZ(0);
-                                    transition: transform .5s ease-out;
-                                }
-                            }
-                        }
-                        //     }
-                        // }
+                    &::before {
+                        background-clip: text;
+                        background-image: linear-gradient( to top left, #9256dcd8 0.5%, $colour-secondary 100%);
                     }
-                }
-                &-price-tick {
-                    // &-label {
-                    display: flex;
-                    width: 20%;
-                    .dish {
-                        &-price {
-                            margin: 12px 10px 12px 0;
-                            height: 40px;
-                            display: flex;
-                            align-items: end;
-                            justify-content: center;
-                            transform: translateX(50%);
-                            transition: transform .5s ease-out;
-                            &__txt {
-                                margin: 0;
-                            }
-                        }
-                        &-tick {
-                            border-radius: 0 15px 15px 0;
-                            @include flex-center-center;
-                            width: 50%;
-                            cursor: pointer;
-                            background-color: $colour-tertiary;
-                            transform: scaleX(0);
-                            transition: transform .5s ease-out;
-                            transform-origin: top right;
-                            &__icon {
-                                transform: rotateZ(-360deg);
-                                transition: transform .5s ease-out;
-                            }
-                        }
-                    }
-                }
-                &:hover {
-                    // .dish {
-                    //     &-name {
-                    //         width: 60%;
-                    //     }
-                    //     &-price-tick {
-                    //         width: 40%;
-                    //         .dish {
-                    //             &-price {
-                    //                 margin-right: 0;
-                    //                 width: 50%;
-                    //                 transform: translateX(0);
-                    //                 transition: transform .5s ease-out;
-                    //             }
-                    //             &-tick {
-                    //                 transform: scaleX(1);
-                    //                 transition: transform .5s ease-out;
-                    //                 &__icon {
-                    //                     transform: rotateZ(0);
-                    //                     transition: transform .5s ease-out;
-                    //                 }
-                    //             }
-                    //         }
-                    //     }
-                    // }
-                    @include shadow-box-hover;
                 }
             }
-        }
-        .btn {
-            align-self: center;
-            margin: 40px auto;
-            padding: 15px 45px;
         }
     }
+    .dishes-list {
+        margin-top: 30px;
+        @include tablet-version {
+            margin: 30px 30px 0;
+        }
+        &__ttl {
+            margin: 0;
+        }
+        &__line {
+            width: 40px;
+            height: 3px;
+            background-color: $colour-tertiary;
+            margin-top: 5px;
+        }
+        .first {
+            animation: translate-top 1s ease-out;
+            animation-delay: 0;
+            animation-fill-mode: forwards;
+        }
+        .second {
+            animation: translate-top 1s ease-out;
+            animation-delay: 0.2s;
+            animation-fill-mode: forwards;
+        }
+        .third {
+            animation: translate-top 1s ease-out;
+            animation-delay: 0.4s;
+            animation-fill-mode: forwards;
+        }
+        .fourth {
+            animation: translate-top 1s ease-out;
+            animation-delay: 0.6s;
+            animation-fill-mode: forwards;
+        }
+        .fifth {
+            animation: translate-top 1s ease-out;
+            animation-delay: 0.8s;
+            animation-fill-mode: forwards;
+        }
+        .sixth {
+            animation: translate-top 1s ease-out;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+        }
+        .seventh {
+            animation: translate-top 1s ease-out;
+            animation-delay: 1.2s;
+            animation-fill-mode: forwards;
+        }
+        .eighth {
+            animation: translate-top 1s ease-out;
+            animation-delay: 1.4s;
+            animation-fill-mode: forwards;
+        }
+        .ninth {
+            animation: translate-top 1s ease-out;
+            animation-delay: 1.6s;
+            animation-fill-mode: forwards;
+        }
+        .tenth {
+            animation: translate-top 1s ease-out;
+            animation-delay: 1.8s;
+            animation-fill-mode: forwards;
+        }
+        .dish {
+            opacity: 0;
+            margin: 15px 0 10px;
+            border-radius: 15px;
+            background-color: $colour-white;
+            @include shadow-box;
+            display: flex;
+            align-items: center;
+            @include tablet-version {
+                margin: 25px 20px;
+            }
+            &-name {
+                width: 80%;
+                margin: 12px 0 12px 10px;
+                &__ttl {
+                    @include elipsis;
+                    margin: 0 0 5px 0;
+                }
+                &__txt {
+                    @include elipsis;
+                    margin: 0;
+                }
+            }
+            &__input {
+                display: none;
+                &:checked~.dish-name {
+                    width: 60%;
+                }
+                &:checked~.dish-price-tick {
+                    // .dish {
+                    //     &-label {
+                    width: 40%;
+                    .dish {
+                        &-price {
+                            margin-right: 0;
+                            width: 50%;
+                            transform: translateX(0);
+                            transition: transform 0.5s ease-out;
+                        }
+                        &-tick {
+                            transform: scaleX(1);
+                            transition: transform 0.5s ease-out;
+                            &__icon {
+                                transform: rotateZ(0);
+                                transition: transform 0.5s ease-out;
+                            }
+                        }
+                    }
+                    //     }
+                    // }
+                }
+            }
+            &-price-tick {
+                // &-label {
+                display: flex;
+                width: 20%;
+                .dish {
+                    &-price {
+                        margin: 12px 10px 12px 0;
+                        height: 40px;
+                        display: flex;
+                        align-items: end;
+                        justify-content: center;
+                        transform: translateX(50%);
+                        transition: transform 0.5s ease-out;
+                        &__txt {
+                            margin: 0;
+                        }
+                    }
+                    &-tick {
+                        border-radius: 0 15px 15px 0;
+                        @include flex-center-center;
+                        width: 50%;
+                        cursor: pointer;
+                        background-color: $colour-tertiary;
+                        transform: scaleX(0);
+                        transition: transform 0.5s ease-out;
+                        transform-origin: top right;
+                        &__icon {
+                            transform: rotateZ(-360deg);
+                            transition: transform 0.5s ease-out;
+                        }
+                    }
+                }
+            }
+            &:hover {
+                // .dish {
+                //     &-name {
+                //         width: 60%;
+                //     }
+                //     &-price-tick {
+                //         width: 40%;
+                //         .dish {
+                //             &-price {
+                //                 margin-right: 0;
+                //                 width: 50%;
+                //                 transform: translateX(0);
+                //                 transition: transform .5s ease-out;
+                //             }
+                //             &-tick {
+                //                 transform: scaleX(1);
+                //                 transition: transform .5s ease-out;
+                //                 &__icon {
+                //                     transform: rotateZ(0);
+                //                     transition: transform .5s ease-out;
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
+                @include shadow-box-hover;
+            }
+        }
+    }
+    .btn {
+        align-self: center;
+        margin: 40px auto;
+        padding: 15px 45px;
+    }
+}
