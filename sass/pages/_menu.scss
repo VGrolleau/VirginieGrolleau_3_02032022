@@ -77,11 +77,61 @@
                 background-color: $colour-tertiary;
                 margin-top: 5px;
             }
+            .first {
+                animation: translate-top 1s ease-out;
+                animation-delay: 0;
+                animation-fill-mode: forwards;
+            }
+            .second {
+                animation: translate-top 1s ease-out;
+                animation-delay: .2s;
+                animation-fill-mode: forwards;
+            }
+            .third {
+                animation: translate-top 1s ease-out;
+                animation-delay: .4s;
+                animation-fill-mode: forwards;
+            }
+            .fourth {
+                animation: translate-top 1s ease-out;
+                animation-delay: .6s;
+                animation-fill-mode: forwards;
+            }
+            .fifth {
+                animation: translate-top 1s ease-out;
+                animation-delay: .8s;
+                animation-fill-mode: forwards;
+            }
+            .sixth {
+                animation: translate-top 1s ease-out;
+                animation-delay: 1s;
+                animation-fill-mode: forwards;
+            }
+            .seventh {
+                animation: translate-top 1s ease-out;
+                animation-delay: 1.2s;
+                animation-fill-mode: forwards;
+            }
+            .eighth {
+                animation: translate-top 1s ease-out;
+                animation-delay: 1.4s;
+                animation-fill-mode: forwards;
+            }
+            .ninth {
+                animation: translate-top 1s ease-out;
+                animation-delay: 1.6s;
+                animation-fill-mode: forwards;
+            }
+            .tenth {
+                animation: translate-top 1s ease-out;
+                animation-delay: 1.8s;
+                animation-fill-mode: forwards;
+            }
             .dish {
+                opacity: 0;
                 margin: 15px 0 10px;
                 border-radius: 15px;
                 background-color: $colour-white;
-                animation: translate-top 1s ease-out;
                 @include shadow-box;
                 display: flex;
                 align-items: center;

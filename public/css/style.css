@@ -10,10 +10,12 @@
   }
 }
 @keyframes translate-top {
-  from {
+  0% {
+    opacity: 0;
     transform: translateY(50px);
   }
-  to {
+  100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -481,11 +483,61 @@ a {
   background-color: #99E2D0;
   margin-top: 5px;
 }
+.meals .dishes-list .first {
+  animation: translate-top 1s ease-out;
+  animation-delay: 0;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .second {
+  animation: translate-top 1s ease-out;
+  animation-delay: 0.2s;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .third {
+  animation: translate-top 1s ease-out;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .fourth {
+  animation: translate-top 1s ease-out;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .fifth {
+  animation: translate-top 1s ease-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .sixth {
+  animation: translate-top 1s ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .seventh {
+  animation: translate-top 1s ease-out;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .eighth {
+  animation: translate-top 1s ease-out;
+  animation-delay: 1.4s;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .ninth {
+  animation: translate-top 1s ease-out;
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+}
+.meals .dishes-list .tenth {
+  animation: translate-top 1s ease-out;
+  animation-delay: 1.8s;
+  animation-fill-mode: forwards;
+}
 .meals .dishes-list .dish {
+  opacity: 0;
   margin: 15px 0 10px;
   border-radius: 15px;
   background-color: #fff;
-  animation: translate-top 1s ease-out;
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-out;
   display: flex;
