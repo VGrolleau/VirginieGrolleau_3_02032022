@@ -18,3 +18,37 @@
         transform: translateY(0);
     }
 }
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes load {
+    0% {
+        stroke-dashoffset: 570;
+    }
+    50% {
+        stroke-dashoffset: 530;
+    }
+    100% {
+        stroke-dashoffset: 570;
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes disappear {
+    0% {
+        transform: scale(1, 1);
+    }
+    99% {
+        opacity: 0;
+        transform: scale(0, 0);
+        animation-fill-mode: forwards;
+    }
+}

@@ -69,3 +69,46 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin loader {
+    width: 150px;
+    height: 150px;
+    &-svg {
+        width: 90%;
+        fill: none;
+        .load {
+            transform-origin: 50% 50%;
+            stroke-dasharray: 570;
+            stroke-width: 20px;
+            &.one {
+                stroke: $colour-primary;
+                animation: load 1.5s infinite;
+            }
+            &.two {
+                stroke: $colour-secondary;
+                animation: load 1.5s infinite;
+                animation-delay: 0.1s;
+            }
+            &.three {
+                stroke: $colour-tertiary;
+                animation: load 1.5s infinite;
+                animation-delay: 0.2s;
+            }
+        }
+        .point {
+            animation: bounce 1.5s infinite ease-in-out;
+            &.one {
+                fill: $colour-primary;
+                animation-delay: 0s;
+            }
+            &.two {
+                fill: $colour-secondary;
+                animation-delay: 0.1s;
+            }
+            &.three {
+                fill: $colour-tertiary;
+                animation-delay: 0.2s;
+            }
+        }
+    }
+}

@@ -22,18 +22,7 @@
         margin-bottom: 30px;
     }
     .btn {
-        // background-image: linear-gradient(to top left, $colour-primary 10%, $colour-secondary 100%);
-        // border: none;
-        // border-radius: 30px;
         padding: 15px 20px;
-        // @include shadow-box;
-        // transition: all .3s;
-        // &:hover {
-        //     cursor: pointer;
-        //     background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
-        //     @include shadow-box-hover;
-        //     transition: all .3s;
-        // }
     }
 }
 
@@ -49,7 +38,6 @@
         border-radius: 25px;
         @include shadow-box;
         transition: all .3s ease-out;
-        // &:last-child {
         &:hover {
             background-color: #9256dc32;
             @include shadow-box-hover;
@@ -130,12 +118,10 @@
                 display: none;
                 &:checked~.card-footer-label {
                     .card-footer__icon {
-                        // display: none;
                         transform: scaleY(0);
                         transition: transform .5s ease-out;
                     }
                     .card-footer__icon--checked {
-                        // display: block;
                         transform: scaleY(1);
                         transition: transform .5s ease-out;
                         &::before {
@@ -143,28 +129,17 @@
                             background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
                         }
                     }
-                    // .card-footer__icon {
-                    //     &::before {
-                    //         // transition: color .5s ease-out;
-                    //         // }
-                    //         // &:hover::before {
-                    //         background-clip: text;
-                    //         background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
-                    //     }
-                    // }
                 }
             }
             &-label {
                 cursor: pointer;
                 .card-footer__icon {
-                    // display: block;
                     position: absolute;
                     right: 40px;
                     transform: scaleY(1);
                     transition: transform .5s ease-out;
                 }
                 .card-footer__icon--checked {
-                    // display: none;
                     position: absolute;
                     right: 40px;
                     transform: scaleY(0);
@@ -173,37 +148,7 @@
                         background-clip: text;
                         background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
                     }
-                    // }
                 }
-                // &:checked {
-                //     .card-footer__icon {
-                //         display: none;
-                //     }
-                //     .card-footer__icon--checked {
-                //         display: block;
-                //     }
-                //     // .card-footer__icon {
-                //     //     // transform: scaleY(1);
-                //     //     // transition: transform .5s ease-out;
-                //     //     &::before {
-                //     //         // transition: color .5s ease-out;
-                //     //         // }
-                //     //         // &:hover::before {
-                //     //         background-clip: text;
-                //     //         background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
-                //     //     }
-                //     // }
-                // }
-                // .card-footer__icon {
-                //     &::before {
-                //         transition: color .5s ease-out;
-                //     }
-                //     &:hover::before {
-                //         background-clip: text;
-                //         background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
-                //         cursor: pointer;
-                //     }
-                // }
             }
         }
     }
