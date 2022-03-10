@@ -9,9 +9,6 @@
     justify-content: center;
     animation: disappear .5s 3s;
     animation-fill-mode: forwards;
-    // @if (animation-fill-mode: forwards) {
-    //     display: none;
-    // }
     .loader {
         @include loader;
     }
