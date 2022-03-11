@@ -157,6 +157,10 @@
             &-name {
                 width: 80%;
                 margin: 12px 0 12px 10px;
+                @include tablet-version {
+                    width: 90%;
+                    margin: 18px 0 18px 15px;
+                }
                 &__ttl {
                     @include elipsis;
                     margin: 0 0 5px 0;
@@ -170,11 +174,15 @@
                 display: none;
                 &:checked~.dish-name {
                     width: 60%;
+                    @include tablet-version {
+                        width: 80%;
+                    }
                 }
                 &:checked~.dish-price-tick {
-                    // .dish {
-                    //     &-label {
                     width: 40%;
+                    @include tablet-version {
+                        width: 20%;
+                    }
                     .dish {
                         &-price {
                             margin-right: 0;
@@ -191,14 +199,14 @@
                             }
                         }
                     }
-                    //     }
-                    // }
                 }
             }
             &-price-tick {
-                // &-label {
                 display: flex;
                 width: 20%;
+                @include tablet-version {
+                    width: 10%;
+                }
                 .dish {
                     &-price {
                         margin: 12px 10px 12px 0;
@@ -208,6 +216,9 @@
                         justify-content: center;
                         transform: translateX(50%);
                         transition: transform 0.5s ease-out;
+                        @include tablet-version {
+                            margin: 18px 10px 18px 0;
+                        }
                         &__txt {
                             margin: 0;
                         }

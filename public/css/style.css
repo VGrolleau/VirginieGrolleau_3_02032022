@@ -647,6 +647,12 @@ a {
   width: 80%;
   margin: 12px 0 12px 10px;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .meals .dishes-list .dish-name {
+    width: 90%;
+    margin: 18px 0 18px 15px;
+  }
+}
 .meals .dishes-list .dish-name__ttl {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -665,8 +671,18 @@ a {
 .meals .dishes-list .dish__input:checked ~ .dish-name {
   width: 60%;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .meals .dishes-list .dish__input:checked ~ .dish-name {
+    width: 80%;
+  }
+}
 .meals .dishes-list .dish__input:checked ~ .dish-price-tick {
   width: 40%;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .meals .dishes-list .dish__input:checked ~ .dish-price-tick {
+    width: 20%;
+  }
 }
 .meals .dishes-list .dish__input:checked ~ .dish-price-tick .dish-price {
   margin-right: 0;
@@ -686,6 +702,11 @@ a {
   display: flex;
   width: 20%;
 }
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .meals .dishes-list .dish-price-tick {
+    width: 10%;
+  }
+}
 .meals .dishes-list .dish-price-tick .dish-price {
   margin: 12px 10px 12px 0;
   height: 40px;
@@ -694,6 +715,11 @@ a {
   justify-content: center;
   transform: translateX(50%);
   transition: transform 0.5s ease-out;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .meals .dishes-list .dish-price-tick .dish-price {
+    margin: 18px 10px 18px 0;
+  }
 }
 .meals .dishes-list .dish-price-tick .dish-price__txt {
   margin: 0;
