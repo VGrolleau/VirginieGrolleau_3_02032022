@@ -23,6 +23,9 @@
     // padding: 15px 20px;
     @include shadow-box;
     transition: all .3s;
+    @include desktop-version {
+        font-size: 1.2em;
+    }
     &:hover {
         cursor: pointer;
         background-image: linear-gradient(to top left, #9256dcd8 .5%, $colour-secondary 100%);
@@ -52,6 +55,14 @@
     animation: beat 2.5s infinite;
     @include tablet-version {
         right: 135px;
+    }
+    @include desktop-version {
+        font-size: 1em;
+        padding: 10px 12px;
+        border-radius: 5px;
+        margin: 0;
+        top: 20px;
+        right: 25px;
     }
 }
 
@@ -118,6 +129,12 @@
 
 @mixin tablet-version {
     @media only screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)) {
+        @content;
+    }
+}
+
+@mixin desktop-version {
+    @media only screen and (min-width: map-get($breakpoints, desktop-min)) {
         @content;
     }
 }

@@ -3,6 +3,14 @@
     justify-content: center;
     align-items: center;
     padding: 15px 20px;
+    @include desktop-version {
+        padding: 50px 15%;
+    }
+    &__logo {
+        @include desktop-version {
+            width: 15em;
+        }
+    }
     &__previous {
         position: absolute;
         left: 20px;

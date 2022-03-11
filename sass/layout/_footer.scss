@@ -7,14 +7,31 @@
     @include tablet-version {
         padding: 30px 50px;
     }
+    @include desktop-version {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 10%;
+    }
     &__ttl {
         margin: 0 0 20px;
     }
     .links {
         display: flex;
         flex-direction: column;
+        @include desktop-version {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-evenly;
+            margin: 10px 0;
+        }
         &__link {
             margin-bottom: 10px;
+            @include desktop-version {
+                margin: 0;
+                width: 25%;
+                text-align: center;
+            }
         }
     }
     i {

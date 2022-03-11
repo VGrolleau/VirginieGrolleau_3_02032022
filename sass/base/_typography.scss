@@ -11,18 +11,39 @@
 .location {
     font-weight: 500;
     color: $colour-location-grey;
+    &__icon {
+        @include desktop-version {
+            font-size: 1.2em;
+        }
+    }
+    &__txt {
+        @include desktop-version {
+            font-size: 1.2em;
+        }
+    }
 }
 
 .xploration {
     &__ttl {
         font-size: 1.6em;
+        @include desktop-version {
+            font-size: 2em;
+        }
     }
     &__txt {
         font-weight: 300;
+        @include desktop-version {
+            font-size: 1.2em;
+        }
     }
 }
 
-// .functioning {
+.functioning__ttl {
+    @include desktop-version {
+        font-size: 1.8em;
+    }
+}
+
 .rule {
     font-weight: 500;
     @include tablet-version {
@@ -30,22 +51,53 @@
     }
     &__prepend {
         color: $colour-white;
+        @include desktop-version {
+            font-size: 1.2em;
+        }
+    }
+    &__icon {
+        @include desktop-version {
+            font-size: 1.5em;
+        }
+    }
+    &__txt {
+        @include desktop-version {
+            font-size: 1.2em;
+        }
     }
 }
 
-// }
-// .restaurants {
+.restaurants__ttl {
+    @include desktop-version {
+        font-size: 1.8em;
+    }
+}
+
 .card-footer {
     &-name {
         &__ttl {
             font-size: 1.1em;
+            @include desktop-version {
+                font-size: 1.2em;
+            }
         }
         &__txt {
             font-weight: 300;
+            @include desktop-version {
+                font-size: 1.1em;
+            }
         }
     }
     &-label {
+        .card-footer__icon {
+            @include desktop-version {
+                font-size: 1.8em;
+            }
+        }
         .card-footer__icon--checked {
+            @include desktop-version {
+                font-size: 1.8em;
+            }
             &::before {
                 color: transparent;
                 font-weight: bold;
@@ -54,8 +106,6 @@
     }
 }
 
-// }
-// .meals {
 .menu__icon--checked {
     &::before {
         color: transparent;
@@ -88,12 +138,14 @@
     }
 }
 
-// }
 .footer {
     color: $colour-white;
     &__ttl {
         font-family: "Shrikhand", cursive;
         font-size: medium;
+        @include desktop-version {
+            font-size: 1.2em;
+        }
     }
     .links {
         font-weight: 500;
