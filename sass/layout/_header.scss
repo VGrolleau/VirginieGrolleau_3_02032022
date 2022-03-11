@@ -14,11 +14,18 @@
     &__previous {
         position: absolute;
         left: 20px;
+        @include desktop-version {
+            left: 50px;
+        }
     }
     &-menu {
         position: fixed;
         width: calc(100% - 40px);
         z-index: 1;
         background-color: white;
+        @include desktop-version {
+            position: relative;
+            width: auto;
+        }
     }
 }

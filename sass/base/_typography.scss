@@ -6,6 +6,9 @@
     @include tablet-version {
         font-size: 1.2em;
     }
+    @include desktop-version {
+        font-size: 1.8em;
+    }
 }
 
 .location {
@@ -113,11 +116,26 @@
     }
 }
 
+.meals-header__ttl {
+    @include desktop-version {
+        font-size: 2em;
+    }
+}
+
+.menu-label {
+    @include desktop-version {
+        font-size: 1.4em;
+    }
+}
+
 .dishes-list {
     &__ttl {
         font-weight: 300;
         font-size: 1em;
         text-transform: uppercase;
+        @include desktop-version {
+            font-size: 1.2em;
+        }
     }
     .dish {
         &-name {
