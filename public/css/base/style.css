@@ -194,6 +194,7 @@
 }
 .dishes-list .dish-name__ttl {
   font-size: 1em;
+  font-weight: 600;
 }
 .dishes-list .dish-name__txt {
   font-size: 0.9em;
@@ -966,12 +967,14 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 0 0 5px 0;
+  display: block;
 }
 .meals .dishes-list .dish-name__txt {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 0;
+  display: block;
 }
 .meals .dishes-list .dish__input {
   display: none;

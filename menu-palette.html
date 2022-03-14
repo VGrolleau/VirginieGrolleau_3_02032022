@@ -9,10 +9,10 @@
     <link rel="shortcut icon" href="public/img/logo/ohmyfood.png" type="image/x-icon">
 
     <!-- STYLES -->
-    <!-- <link rel="stylesheet" href="./public/css/normalize.css">
-    <link rel="stylesheet" href="./public/css/style.css"> -->
-    <link rel="stylesheet" href="./public/css/prefixed/normalize.css">
-    <link rel="stylesheet" href="./public/css/prefixed/style.css">
+    <link rel="stylesheet" href="./public/css/base/normalize.css">
+    <link rel="stylesheet" href="./public/css/base/style.css">
+    <!-- <link rel="stylesheet" href="./public/css/prefixed/normalize.css">
+    <link rel="stylesheet" href="./public/css/prefixed/style.css"> -->
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,9 +43,9 @@
 
                 <input type="checkbox" name="check-palette" id="check-palette" class="menu__input">
                 <label for="check-palette" class="menu-label">
-                    <i class="fa-regular fa-heart fa-xl menu__icon"></i>
-                    <i class="fa-solid fa-heart fa-xl menu__icon--checked"></i>
-                </label>
+                        <i class="fa-regular fa-heart fa-xl menu__icon"></i>
+                        <i class="fa-solid fa-heart fa-xl menu__icon--checked"></i>
+                    </label>
             </div>
 
             <div class="dishes-list">
@@ -57,22 +57,28 @@
                     <input type="checkbox" name="check-first-entry-palette" id="check-first-entry-palette" class="dish__input">
                     <label for="check-first-entry-palette" class="dish-name">
                         <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Fricassée d'escargot</h3>
+                        <!-- <h3 class="dish-name__ttl">Fricassée d'escargot</h3> -->
+                        <span class="dish-name__ttl"> Fricassée d'escargot</span>
 
-                        <p class="dish-name__txt">Au piment d'Espelette</p>
+                        <!-- <p class="dish-name__txt">Au piment d'Espelette</p> -->
+                        <span class="dish-name__txt">Au piment d'Espelette</span>
                         <!-- </div> -->
                     </label>
 
                     <label for="check-first-entry-palette" class="dish-price-tick">
-                        <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">25€</p>
-                        </div>
-
-                        <div class="dish-tick">
-                            <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
+                    <!-- <div class="dish-price-tick"> -->
+                        <!-- <div class="dish-price"> -->
+                        <span class="dish-price">
+                                <span class="dish-price__txt">25€</span>
+                        </span>
                         <!-- </div> -->
+
+                        <!-- <div class="dish-tick"> -->
+                        <span class="dish-tick">
+                            <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
+                        </span>
+                        <!-- </div> -->
+                    <!-- </div> -->
                     </label>
                 </div>
 
@@ -80,21 +86,21 @@
                     <input type="checkbox" name="check-second-entry-palette" id="check-second-entry-palette" class="dish__input">
                     <label for="check-second-entry-palette" class="dish-name">
                         <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Foie gras de canard mi-cuit</h3>
+                        <span class="dish-name__ttl">Foie gras de canard mi-cuit</span>
 
-                        <p class="dish-name__txt">Et ses copeaux de truffe noire</p>
+                        <span class="dish-name__txt">Et ses copeaux de truffe noire</span>
                         <!-- </div> -->
                     </label>
 
                     <label for="check-second-entry-palette" class="dish-price-tick">
                         <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">35€</p>
-                        </div>
+                        <span class="dish-price">
+                            <span class="dish-price__txt">35€</span>
+                        </span>
 
-                        <div class="dish-tick">
+                        <span class="dish-tick">
                             <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
+                        </span>
                         <!-- </div> -->
                     </label>
                 </div>
@@ -102,23 +108,23 @@
                 <div class="dish third">
                     <input type="checkbox" name="check-third-entry-palette" id="check-third-entry-palette" class="dish__input">
                     <label for="check-third-entry-palette" class="dish-name">
-                        <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Oeuf au plat</h3>
+                    <!-- <div class="dish-name"> -->
+                        <span class="dish-name__ttl">Oeuf au plat</span>
 
-                        <p class="dish-name__txt">Assaisonné à la truffe sur lit de caviar</p>
-                        <!-- </div> -->
+                        <span class="dish-name__txt">Assaisonné à la truffe sur lit de caviar</span>
+                    <!-- </div> -->
                     </label>
 
                     <label for="check-third-entry-palette" class="dish-price-tick">
-                        <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">20€</p>
-                        </div>
+                    <!-- <div class="dish-price-tick"> -->
+                        <span class="dish-price">
+                            <span class="dish-price__txt">20€</span>
+                        </span>
 
-                        <div class="dish-tick">
+                        <span class="dish-tick">
                             <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
-                        <!-- </div> -->
+                        </span>
+                    <!-- </div> -->
                     </label>
                 </div>
             </div>
@@ -131,69 +137,69 @@
                 <div class="dish fourth">
                     <input type="checkbox" name="check-first-plate-palette" id="check-first-plate-palette" class="dish__input">
                     <label for="check-first-plate-palette" class="dish-name">
-                        <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Filet de boeuf aux herbes</h3>
+                    <!-- <div class="dish-name"> -->
+                        <span class="dish-name__ttl">Filet de boeuf aux herbes</span>
 
-                        <p class="dish-name__txt">Accompagné de sa ribambelle de légumes</p>
-                        <!-- </div> -->
+                        <span class="dish-name__txt">Accompagné de sa ribambelle de légumes</span>
+                    <!-- </div> -->
                     </label>
 
                     <label for="check-first-plate-palette" class="dish-price-tick">
-                        <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">40€</p>
-                        </div>
+                    <!-- <div class="dish-price-tick"> -->
+                        <span class="dish-price">
+                            <span class="dish-price__txt">40€</span>
+                        </span>
 
-                        <div class="dish-tick">
+                        <span class="dish-tick">
                             <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
-                        <!-- </div> -->
+                        </span>
+                    <!-- </div> -->
                     </label>
                 </div>
 
                 <div class="dish fifth">
                     <input type="checkbox" name="check-second-plate-palette" id="check-second-plate-palette" class="dish__input">
                     <label for="check-second-plate-palette" class="dish-name">
-                        <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Parmentier de queue de boeuf</h3>
+                    <!-- <div class="dish-name"> -->
+                        <span class="dish-name__ttl">Parmentier de queue de boeuf</span>
 
-                        <p class="dish-name__txt">À la truffe noire sur sa purée de panais</p>
-                        <!-- </div> -->
+                        <span class="dish-name__txt">À la truffe noire sur sa purée de panais</span>
+                    <!-- </div> -->
                     </label>
 
                     <label for="check-second-plate-palette" class="dish-price-tick">
-                        <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">35€</p>
-                        </div>
+                    <!-- <div class="dish-price-tick"> -->
+                        <span class="dish-price">
+                            <span class="dish-price__txt">35€</span>
+                        </span>
 
-                        <div class="dish-tick">
+                        <span class="dish-tick">
                             <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
-                        <!-- </div> -->
+                        </span>
+                    <!-- </div> -->
                     </label>
                 </div>
 
                 <div class="dish sixth">
                     <input type="checkbox" name="check-third-plate-palette" id="check-third-plate-palette" class="dish__input">
                     <label for="check-third-plate-palette" class="dish-name">
-                        <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Filet de turbot</h3>
+                    <!-- <div class="dish-name"> -->
+                        <span class="dish-name__ttl">Filet de turbot</span>
 
-                        <p class="dish-name__txt">Aux agrumes</p>
-                        <!-- </div> -->
+                        <span class="dish-name__txt">Aux agrumes</span>
+                    <!-- </div> -->
                     </label>
 
                     <label for="check-third-plate-palette" class="dish-price-tick">
-                            <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">44€</p>
-                        </div>
+                    <!-- <div class="dish-price-tick"> -->
+                        <span class="dish-price">
+                            <span class="dish-price__txt">44€</span>
+                        </span>
 
-                        <div class="dish-tick">
+                        <span class="dish-tick">
                             <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
-                        <!-- </div> -->
+                        </span>
+                    <!-- </div> -->
                     </label>
                 </div>
             </div>
@@ -206,69 +212,69 @@
                 <div class="dish seventh">
                     <input type="checkbox" name="check-first-dessert-palette" id="check-first-dessert-palette" class="dish__input">
                     <label for="check-first-dessert-palette" class="dish-name">
-                        <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Paris-Brest</h3>
+                    <!-- <div class="dish-name"> -->
+                        <span class="dish-name__ttl">Paris-Brest</span>
 
-                        <p class="dish-name__txt">Revisité</p>
-                        <!-- </div> -->
+                        <span class="dish-name__txt">Revisité</span>
+                    <!-- </div> -->
                     </label>
 
                     <label for="check-first-dessert-palette" class="dish-price-tick">
-                        <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">18€</p>
-                        </div>
+                    <!-- <div class="dish-price-tick"> -->
+                        <span class="dish-price">
+                            <span class="dish-price__txt">18€</span>
+                        </span>
 
-                        <div class="dish-tick">
+                        <span class="dish-tick">
                             <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
-                        <!-- </div> -->
+                        </span>
+                    <!-- </div> -->
                     </label>
                 </div>
 
                 <div class="dish eighth">
                     <input type="checkbox" name="check-second-dessert-palette" id="check-second-dessert-palette" class="dish__input">
                     <label for="check-second-dessert-palette" class="dish-name">
-                        <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Macaron au chocolat d'exception</h3>
+                    <!-- <div class="dish-name"> -->
+                        <span class="dish-name__ttl">Macaron au chocolat d'exception</span>
 
-                        <p class="dish-name__txt">Et glace à la vanille de Madagascar</p>
-                        <!-- </div> -->
+                        <span class="dish-name__txt">Et glace à la vanille de Madagascar</span>
+                    <!-- </div> -->
                     </label>
 
                     <label for="check-second-dessert-palette" class="dish-price-tick">
-                        <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">22€</p>
-                        </div>
+                    <!-- <div class="dish-price-tick"> -->
+                        <span class="dish-price">
+                            <span class="dish-price__txt">22€</span>
+                        </span>
 
-                        <div class="dish-tick">
+                        <span class="dish-tick">
                             <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
-                        <!-- </div> -->
+                        </span>
+                    <!-- </div> -->
                     </label>
                 </div>
 
                 <div class="dish ninth">
                     <input type="checkbox" name="check-third-dessert-palette" id="check-third-dessert-palette" class="dish__input">
                     <label for="check-third-dessert-palette" class="dish-name">
-                        <!-- <div class="dish-name"> -->
-                        <h3 class="dish-name__ttl">Mousse au chocolat</h3>
+                    <!-- <div class="dish-name"> -->
+                        <span class="dish-name__ttl">Mousse au chocolat</span>
 
-                        <p class="dish-name__txt">Au piment d'Espelette et à la truffe noire</p>
-                        <!-- </div> -->
+                        <span class="dish-name__txt">Au piment d'Espelette et à la truffe noire</span>
+                    <!-- </div> -->
                     </label>
 
                     <label for="check-third-dessert-palette" class="dish-price-tick">
-                        <!-- <div class="dish-price-tick"> -->
-                        <div class="dish-price">
-                            <p class="dish-price__txt">23€</p>
-                        </div>
+                    <!-- <div class="dish-price-tick"> -->
+                        <span class="dish-price">
+                            <span class="dish-price__txt">23€</span>
+                        </span>
 
-                        <div class="dish-tick">
+                        <span class="dish-tick">
                             <i class="fa-solid fa-circle-check fa-lg dish-tick__icon"></i>
-                        </div>
-                        <!-- </div> -->
+                        </span>
+                    <!-- </div> -->
                     </label>
                 </div>
             </div>
@@ -276,23 +282,20 @@
             <button class="btn">Commander</button>
         </div>
     </main>
-</body>
 
-</html>
-</main>
-<footer class="footer">
-    <!-- <img src="public/img/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" class="footer__logo"> -->
-    <h2 class="footer__ttl">ohmyfood</h2>
+    <footer class="footer">
+        <!-- <img src="public/img/logo/ohmyfood@2x.svg" alt="Logo Ohmyfood" class="footer__logo"> -->
+        <h2 class="footer__ttl">ohmyfood</h2>
 
-    <div class="links">
-        <a href="#" class="links__link">
-            <i class="fa-solid fa-utensils links__prepend"></i>Proposer un restaurant</a>
-        <a href="#" class="links__link">
-            <i class="fa-solid fa-handshake-angle fa-sm links__prepend"></i>Devenir propriétaire</a>
-        <a href="#" class="links__link">Mentions légales</a>
-        <a href="mailto:contact@ohmyfood.com" class="links__link">Contact</a>
-    </div>
-</footer>
+        <div class="links">
+            <a href="#" class="links__link">
+                <i class="fa-solid fa-utensils links__prepend"></i>Proposer un restaurant</a>
+            <a href="#" class="links__link">
+                <i class="fa-solid fa-handshake-angle fa-sm links__prepend"></i>Devenir propriétaire</a>
+            <a href="#" class="links__link">Mentions légales</a>
+            <a href="mailto:contact@ohmyfood.com" class="links__link">Contact</a>
+        </div>
+    </footer>
 </body>
 
 </html>

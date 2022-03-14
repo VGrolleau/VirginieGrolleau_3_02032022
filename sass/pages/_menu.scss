@@ -206,10 +206,12 @@
                 &__ttl {
                     @include elipsis;
                     margin: 0 0 5px 0;
+                    display: block;
                 }
                 &__txt {
                     @include elipsis;
                     margin: 0;
+                    display: block;
                 }
             }
             &__input {
