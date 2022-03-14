@@ -14,6 +14,7 @@
     },
     "author": "Virginie GROLLEAU",
     "license": "ISC",
+    "browserslist": "last 4 versions",
     "bugs": {
         "url": "https://github.com/VGrolleau/VirginieGrolleau_3_02032022/issues"
     },
