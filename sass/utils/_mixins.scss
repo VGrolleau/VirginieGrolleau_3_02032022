@@ -134,7 +134,14 @@
 }
 
 @mixin desktop-version {
+    // @media only screen and (min-width: map-get($breakpoints, desktop-min)) and (max-width: map-get($breakpoints, desktop-max)) {
     @media only screen and (min-width: map-get($breakpoints, desktop-min)) {
+        @content;
+    }
+}
+
+@mixin large-desktop-version {
+    @media only screen and (min-width: map-get($breakpoints, large-desktop-min)) {
         @content;
     }
 }

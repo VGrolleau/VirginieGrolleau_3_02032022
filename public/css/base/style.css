@@ -52,12 +52,12 @@
   font-family: "Roboto", sans-serif;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .header__previous {
     font-size: 1.2em;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .header__previous {
     font-size: 1.8em;
   }
@@ -67,12 +67,12 @@
   font-weight: 500;
   color: #373737;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .location__icon {
     font-size: 1.2em;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .location__txt {
     font-size: 1.2em;
   }
@@ -81,7 +81,7 @@
 .xploration__ttl {
   font-size: 1.6em;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .xploration__ttl {
     font-size: 2em;
   }
@@ -89,13 +89,13 @@
 .xploration__txt {
   font-weight: 300;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .xploration__txt {
     font-size: 1.2em;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .functioning__ttl {
     font-size: 1.8em;
   }
@@ -104,7 +104,7 @@
 .rule {
   font-weight: 500;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .rule {
     font-size: 1.1em;
   }
@@ -112,23 +112,23 @@
 .rule__prepend {
   color: #fff;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .rule__prepend {
     font-size: 1.2em;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .rule__icon {
     font-size: 1.5em;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .rule__txt {
     font-size: 1.2em;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .restaurants__ttl {
     font-size: 1.8em;
   }
@@ -137,7 +137,7 @@
 .card-footer-name__ttl {
   font-size: 1.1em;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .card-footer-name__ttl {
     font-size: 1.2em;
   }
@@ -145,17 +145,17 @@
 .card-footer-name__txt {
   font-weight: 300;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .card-footer-name__txt {
     font-size: 1.1em;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .card-footer-label .card-footer__icon {
     font-size: 1.8em;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .card-footer-label .card-footer__icon--checked {
     font-size: 1.8em;
   }
@@ -170,13 +170,13 @@
   font-weight: bold;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .meals-header__ttl {
     font-size: 2em;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .menu-label {
     font-size: 1.4em;
   }
@@ -187,7 +187,7 @@
   font-size: 1em;
   text-transform: uppercase;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .dishes-list__ttl {
     font-size: 1.2em;
   }
@@ -214,7 +214,7 @@
   font-family: "Shrikhand", cursive;
   font-size: medium;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .footer__ttl {
     font-size: 1.2em;
   }
@@ -237,7 +237,7 @@
   transition: box-shadow 0.3s ease-out;
   transition: all 0.3s;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .btn {
     font-size: 1.2em;
   }
@@ -324,12 +324,12 @@ a {
   font-size: 0.8em;
   animation: beat 2.5s infinite;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .new {
     right: 135px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .new {
     font-size: 1em;
     padding: 10px 12px;
@@ -349,12 +349,12 @@ a {
   align-items: center;
   padding: 15px 20px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .header {
     padding: 50px 15%;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .header__logo {
     width: 15em;
   }
@@ -363,7 +363,7 @@ a {
   position: absolute;
   left: 20px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .header__previous {
     left: 50px;
   }
@@ -374,7 +374,7 @@ a {
   z-index: 1;
   background-color: white;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .header-menu {
     position: relative;
     width: auto;
@@ -388,12 +388,12 @@ a {
   left: 0;
   right: 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .footer {
     padding: 30px 50px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .footer {
     display: flex;
     flex-direction: column;
@@ -408,7 +408,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .footer .links {
     flex-direction: row;
     width: 100%;
@@ -419,7 +419,7 @@ a {
 .footer .links__link {
   margin-bottom: 10px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .footer .links__link {
     margin: 0;
     width: 25%;
@@ -439,7 +439,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .location {
     padding: 30px 15%;
   }
@@ -448,7 +448,7 @@ a {
   position: absolute;
   left: calc(50% - 80px);
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .location__icon {
     left: calc(50% - 100px);
   }
@@ -456,7 +456,7 @@ a {
 .location__txt {
   position: relative;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .location__txt {
     margin: 0;
   }
@@ -467,7 +467,7 @@ a {
   padding: 50px 30px;
   text-align: center;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .xploration {
     padding: 80px 15%;
   }
@@ -478,7 +478,7 @@ a {
 .xploration__txt {
   margin-bottom: 30px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .xploration__txt {
     margin-top: 30px;
     margin-bottom: 60px;
@@ -487,7 +487,7 @@ a {
 .xploration .btn {
   padding: 15px 20px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .xploration .btn {
     padding: 20px 25px;
   }
@@ -496,17 +496,17 @@ a {
 .functioning {
   padding: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .functioning {
     padding: 30px 50px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .functioning {
     padding: 50px 15%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .functioning__ttl {
     margin-bottom: 30px;
   }
@@ -514,7 +514,7 @@ a {
 .functioning .rules {
   counter-reset: counterRule;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .functioning .rules {
     display: flex;
     flex-wrap: wrap;
@@ -534,12 +534,12 @@ a {
   transition: box-shadow 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .functioning .rules .rule {
     margin: 0 60px 30px 75px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .functioning .rules .rule {
     position: relative;
     width: 40%;
@@ -566,12 +566,12 @@ a {
 .functioning .rules .rule__prepend::after {
   content: counter(counterRule);
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .functioning .rules .rule__prepend {
     left: 110px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .functioning .rules .rule__prepend {
     left: -15px;
     padding: 5px 10px;
@@ -581,7 +581,7 @@ a {
   margin-right: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .functioning .rules .rule__icon {
     margin: 0 30px 0 15px;
   }
@@ -591,17 +591,17 @@ a {
   background-color: #F6F6F6;
   padding: 50px 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurants {
     padding: 50px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .restaurants {
     padding: 50px 15%;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .restaurants .cards {
     margin: 80px 0;
     display: flex;
@@ -616,12 +616,12 @@ a {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-out;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurants .cards .card {
     margin: 50px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .restaurants .cards .card {
     width: 45%;
     position: relative;
@@ -638,7 +638,7 @@ a {
   height: 180px;
   border-radius: 15px 15px 0 0;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .restaurants .cards .card-img {
     height: 250px;
     border-radius: 30px 30px 0 0;
@@ -662,7 +662,7 @@ a {
   align-items: center;
   padding: 20px 20px 20px 15px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .restaurants .cards .card-footer {
     padding: 30px 30px 30px 25px;
   }
@@ -673,7 +673,7 @@ a {
 .restaurants .cards .card-footer-name__ttl {
   margin: 0 0 5px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .restaurants .cards .card-footer-name__ttl {
     margin-bottom: 10px;
   }
@@ -705,7 +705,7 @@ a {
   transform: scaleY(1);
   transition: transform 0.5s ease-out;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurants .cards .card-footer-label .card-footer__icon {
     right: 130px;
   }
@@ -716,7 +716,7 @@ a {
   transform: scaleY(0);
   transition: transform 0.5s ease-out;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .restaurants .cards .card-footer-label .card-footer__icon--checked {
     right: 130px;
   }
@@ -729,7 +729,7 @@ a {
 .body__img {
   display: none;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .body__img {
     display: block;
     object-fit: cover;
@@ -746,12 +746,12 @@ a {
   position: fixed;
   top: 64px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .main__img {
     height: 300px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .main__img {
     display: none;
   }
@@ -767,14 +767,14 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals {
     top: 335px;
     margin-bottom: 335px;
     padding: 50px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .meals {
     margin: 220px 15%;
     padding: 50px;
@@ -790,7 +790,7 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .meals-header {
     position: relative;
     width: 100%;
@@ -821,12 +821,12 @@ a {
 .meals-header .menu-label {
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals-header .menu-label {
     right: 60px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .meals-header .menu-label {
     position: absolute;
     right: 0;
@@ -853,12 +853,18 @@ a {
 .meals .dishes-list {
   margin-top: 30px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals .dishes-list {
     margin: 30px 30px 0;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
+  .meals .dishes-list {
+    margin: 30px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1700px) {
   .meals .dishes-list {
     margin: 60px 0;
     width: 30%;
@@ -873,7 +879,7 @@ a {
   background-color: #99E2D0;
   margin-top: 5px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .meals .dishes-list__line {
     width: 50px;
     height: 4px;
@@ -941,12 +947,17 @@ a {
   align-items: center;
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals .dishes-list .dish {
     margin: 25px 20px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
+  .meals .dishes-list .dish {
+    margin: 30px;
+  }
+}
+@media only screen and (min-width: 1700px) {
   .meals .dishes-list .dish {
     margin: 30px 0;
   }
@@ -956,7 +967,7 @@ a {
   margin: 12px 0 12px 10px;
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals .dishes-list .dish-name {
     width: 90%;
     margin: 18px 0 18px 15px;
@@ -982,7 +993,7 @@ a {
 .meals .dishes-list .dish__input:checked ~ .dish-name {
   width: 60%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals .dishes-list .dish__input:checked ~ .dish-name {
     width: 80%;
   }
@@ -990,7 +1001,7 @@ a {
 .meals .dishes-list .dish__input:checked ~ .dish-price-tick {
   width: 40%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals .dishes-list .dish__input:checked ~ .dish-price-tick {
     width: 20%;
   }
@@ -1014,7 +1025,7 @@ a {
   width: 20%;
   cursor: pointer;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals .dishes-list .dish-price-tick {
     width: 10%;
   }
@@ -1029,7 +1040,7 @@ a {
   transition: transform 0.5s ease-out;
   width: 50%;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .meals .dishes-list .dish-price-tick .dish-price {
     margin: 18px 10px 18px 0;
   }
@@ -1062,7 +1073,7 @@ a {
   margin: 40px auto;
   padding: 15px 45px;
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1024px) {
   .meals .btn {
     margin: 0 auto 15px;
   }

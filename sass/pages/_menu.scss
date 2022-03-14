@@ -86,6 +86,10 @@
                     position: absolute;
                     right: 0;
                 }
+                // @include large-desktop-version {
+                //     position: absolute;
+                //     right: 0;
+                // }
                 .menu__icon {
                     position: absolute;
                     right: 30px;
@@ -113,6 +117,10 @@
             margin: 30px 30px 0;
         }
         @include desktop-version {
+            margin: 30px;
+            width: 100%;
+        }
+        @include large-desktop-version {
             margin: 60px 0;
             width: 30%;
         }
@@ -193,6 +201,9 @@
                 margin: 25px 20px;
             }
             @include desktop-version {
+                margin: 30px;
+            }
+            @include large-desktop-version {
                 margin: 30px 0;
             }
             &-name {
