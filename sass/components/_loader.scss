@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    animation: disappear .5s 3s;
+    animation: disappear .5s $random-number+s;
     animation-fill-mode: forwards;
     .loader {
         @include loader;

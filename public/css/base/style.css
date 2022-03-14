@@ -264,7 +264,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: disappear 0.5s 3s;
+  animation: disappear 0.5s 2s;
   animation-fill-mode: forwards;
 }
 .background-loader .loader {
