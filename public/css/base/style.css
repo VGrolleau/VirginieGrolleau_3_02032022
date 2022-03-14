@@ -882,7 +882,7 @@ a {
 }
 .meals .dishes-list .first {
   animation: translate-top 1s ease-out;
-  animation-delay: 0;
+  animation-delay: 0s;
   animation-fill-mode: forwards;
 }
 .meals .dishes-list .second {
