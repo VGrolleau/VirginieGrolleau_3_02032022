@@ -4,9 +4,9 @@
     "description": "Ohmyfood site by Virginie GROLLEAU",
     "main": "index.js",
     "scripts": {
-        "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
-        "prefix-style": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/",
-        "prefix-normalize": "postcss ./public/css/normalize.css --use autoprefixer -d ./public/css/prefixed/"
+        "sass": "sass --watch ./sass/main.scss:./public/css/base/style.css",
+        "prefix-style": "postcss ./public/css/base/style.css --use autoprefixer -d ./public/css/prefixed/",
+        "prefix-normalize": "postcss ./public/css/base/normalize.css --use autoprefixer -d ./public/css/prefixed/"
     },
     "repository": {
         "type": "git",
